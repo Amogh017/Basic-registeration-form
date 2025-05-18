@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reset Password</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <script>
+    function showNewPasswordForm() {
+      document.getElementById('new-password-fields').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Reset Password</h1>
+        </div>
+        <div class="panel-body">
+          <form action="update_password.php" method="post">
+            <div class="form-group">
+              <label for="email">Registered Email</label>
+              <input type="text" class="form-control" name="email" required>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit" />
+          </form>
+
+          <!-- This will be shown via JS after verification or manually handled on backend -->
+          
+        </div>
+        <div class="panel-footer text-right">
+          <small><a href="index.html">Back to Login</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
